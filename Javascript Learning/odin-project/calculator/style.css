@@ -1,0 +1,78 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    border-radius: 50px;
+    min-height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 35%;
+    min-height: 70vh;
+    padding: 25px 25px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px rgb(48, 48, 48), -1px -1px 5px rgb(48, 48, 48), -1px 1px 5px rgb(48, 48, 48), 1px -1px 5px rgb(48, 48, 48);
+
+}
+
+.display-container {
+    height: 55px;
+    color: #00763f;
+    background-color: #02cc6e;
+    text-align: right;
+    padding: 50px 0;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    font-family: 'Seven Segment', sans-serif;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px rgb(48, 48, 48), -4px -4px 2px rgb(48, 48, 48), -4px 4px 2px rgb(48, 48, 48), 4px -4px 2px rgb(48, 48, 48);
+}
+
+.buttons-container {
+    margin-top: 20px;
+    min-height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    gap: 16px;
+
+}
+
+button {
+    padding: 15px 25px;
+    font-family: 'Seven Segment', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    transition: 0.08s ease-in-out;
+}
+
+button:hover {
+    background-color: #3e8e41
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

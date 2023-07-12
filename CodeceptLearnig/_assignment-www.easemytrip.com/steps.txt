@@ -1,0 +1,9 @@
+Steps:
+1.	Specify Source/Destimation/Travel Date/Number of Traveller in testdata.json file
+2.	Your script should read testdata.json file and fill form based in provided testdata.
+3.	Select/Enter Source location
+4.	Select/Enter Destination
+5.	Select Travel Date
+6.	Add No of Travellers
+7.	Click on Search Button
+8.	Verify Search Results

@@ -1,0 +1,95 @@
+html {
+    background-image: url("./bg-image.jpg");
+    background-size: cover;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.options-container button {
+    margin: 36px;
+    margin-bottom: 64px;
+    padding: auto;
+    width: 148px;
+    height: 148px;
+    border: 6px solid black;
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 92px;
+    text-align: center;
+    transition: all 0.25s ease-in-out;
+
+}
+
+.option-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: -2px -2px 12px whitesmoke, -2px 2px 12px whitesmoke, 2px -2px 12px whitesmoke, 2px 2px 12px whitesmoke;
+    ;
+}
+
+#play-button {
+    margin: 8px;
+    padding: 2px;
+    width: 148px;
+    height: 64px;
+    border: 6px solid black;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#play-button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: whitesmoke;
+}
+
+.score-title {
+    letter-spacing: 8px;
+    text-shadow: -2px -2px 1px white, 2px -2px 1px white, -2px 2px 1px white, 2px 2px 1px white;
+}
+
+.score-container {
+    margin-top: 32px;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.score-container span {
+    margin: 22px;
+    color: white;
+    text-shadow: -2px -2px 2px black, -2px 2px 2px black, 2px -2px 2px black, 2px 2px 2px black;
+}
+
+.winner{
+    font-size: 42px;
+    color: rgb(53, 244, 0);
+    text-shadow: 1px 1px 8px gold, -1px 1px 8px gold, 1px -1px 8px gold, -1px -1px 8px gold;
+    position:absolute;
+    overflow:auto;
+    z-index: 100;
+    text-align: center;
+}
+
+.round {
+    height: 32px;
+}
+ .index {
+    text-transform: uppercase;
+    color: white;
+    text-shadow: -2px -2px 2px black, -2px 2px 2px black, 2px -2px 2px black, 2px 2px 2px black;
+    display: inline-block;
+ }

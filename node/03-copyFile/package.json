@@ -1,0 +1,11 @@
+{
+  "name": "copy-file",
+  "version": "1.0.0",
+  "description": "An Async but non-streaming (and therefore in-efficient) function to copy file ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rohit kulkarni",
+  "license": "ISC"
+}

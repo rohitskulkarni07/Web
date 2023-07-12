@@ -1,0 +1,84 @@
+ - CodeceptJS is a modern end to end testing framework 
+ - BDD-style (Behaviour Driven Devlopement)
+ 
+ - Architecture
+
+    CodeceptJS 
+ 
+        helpers: WebDriverIO, Protector, Nightmare, Puppeteer, Appeum
+
+            (different apis)
+
+                {BROWSER}
+
+- Writting testing
+
+    actor { I } act on type of its helpers
+
+    sequence of steps to written perform by actor { I }
+
+- Opening Page
+
+    - Always Navigate to website first using I.amOnPage('/'); URL or relative or absolute path should be give
+    - if relative path is given its appended to URL that is given at the time of cofiguration
+
+- Locating Element
+
+    - CSS or XPATH? Elements are reqired as arguments
+    - I.seeElement('.user');
+    - I.seeElement('//button[contains(., 'press me')]');
+    
+    - strict locator 
+    - I.seeElement({css:'di.user'});
+    - I.seeElement({xpath:'//div[@class=user]'});
+
+    - element by name
+    - I.seeElement({name: 'password'});
+    - element by React component and props
+    - I.seeElement({react: 'user-profile', props: {name: 'davert'}});
+
+    - accessibilty id in ** MOBILE PHONE **
+    - I.seeElement('~username');
+
+- Clicking 
+
+    - Find clickable element named as 'Login'
+    - CodeceptJS tries to find the button or link with the exact text on it
+    - Same is followed by form
+ 
+    - I.click('Login');
+ 
+    - If no element found it tries to find a link or button containing that text
+    - Incase of Image is clickable its alt attribute will be checed for text inclusion
+    
+    - result can be LIMIT to specific context by specifying 2nd Parameter accoirding 
+    
+    - Search only in .nav
+    - I.click('Login', '.nav');
+    
+    - Search only in footer
+    - I.click('Login', {css: 'footer'}); // search only in footer
+
+    - NOTE: Any element can be found by passing in valid CSS or XPath
+    - NOTE: If Click not worked means front-end is not done for automation testing use forceClick for genereating click event
+
+*** '#' or '.' is considered to be CSS.  ***
+***  Locators starting with '//' or './/' are considered to be XPath. ***
+
+
+- Filling Fields | Testing of Forms
+
+    - locate he element using label or css locator
+    
+    - I.fillField('Name', 'Rohit'); //using label 
+
+    - I.fillField('#use_name', 'Rohit'); //using css id 
+
+    - Incase of 
+        I.selectOption('Role','Admin');
+        Only works with standard <select> HTML element
+        If implementation is done by any framework then use 'click'
+
+        - Same goes for 'checkbox' otherwise use click
+
+    

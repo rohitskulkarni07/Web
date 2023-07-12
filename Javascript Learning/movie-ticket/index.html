@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Book Show</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="show">
+            <div class="title">Show1</div>
+            <div id="show-1" class="show-grid">
+                <div class="seats" id="S1A1">A1</div>
+                <div class="seats" id="S1A2">A2</div>
+                <div class="seats" id="S1A3">A3</div>
+                <div class="seats" id="S1A4">A4</div>
+                <div class="seats" id="S1A5">A5</div>
+                <div class="seats" id="S1A6">A6</div>
+                <div class="seats" id="S1A7">A7</div>
+                <div class="seats" id="S1A8">A8</div>
+                <div class="seats" id="S1A9">A9</div>
+
+                <div class="seats" id="S1B1">B1</div>
+                <div class="seats" id="S1B2">B2</div>
+                <div class="seats" id="S1B3">B3</div>
+                <div class="seats" id="S1B4">B4</div>
+                <div class="seats" id="S1B5">B5</div>
+                <div class="seats" id="S1B6">B6</div>
+
+                <div class="seats blank"></div>
+                <div class="seats blank "></div>
+                <div class="seats blank"></div>
+                <div class="seats blank"></div>
+
+                <div class="seats" id="S1C2">C2</div>
+                <div class="seats" id="S1C3">C3</div>
+                <div class="seats" id="S1C4">C4</div>
+                <div class="seats" id="S1C5">C5</div>
+                <div class="seats" id="S1C6">C6</div>
+                <div class="seats" id="S1C7">C7</div>
+
+                <div class="seats blank"></div>
+                <div class="seats blank"></div>
+
+            </div>
+
+            <div class="title">Show2</div>
+            <div id="show-2" class="show-grid">
+                <div class="seats" id="S2A1">A1</div>
+                <div class="seats" id="S2A2">A2</div>
+                <div class="seats" id="S2A3">A3</div>
+                <div class="seats" id="S2A4">A4</div>
+                <div class="seats" id="S2A5">A5</div>
+                <div class="seats" id="S2A6">A6</div>
+                <div class="seats" id="S2A7">A7</div>
+
+                <div class="seats blank"></div>
+                <div class="seats blank"></div>
+                <div class="seats blank"></div>
+
+                <div class="seats" id="S2B2">B2</div>
+                <div class="seats" id="S2B3">B3</div>
+                <div class="seats" id="S2B4">B4</div>
+                <div class="seats" id="S2B5">B5</div>
+                <div class="seats" id="S2B6">B6</div>
+
+                <div class="seats blank"></div>
+                <div class="seats blank"></div>
+                <div class="seats blank"></div>
+
+                <div class="seats" id="S2C1">C1</div>
+                <div class="seats" id="S2C2">C2</div>
+                <div class="seats" id="S2C3">C3</div>
+                <div class="seats" id="S2C4">C4</div>
+                <div class="seats" id="S2C5">C5</div>
+                <div class="seats" id="S2C6">C6</div>
+                <div class="seats" id="S2C7">C7</div>
+
+                <div class="seats blank"></div>
+                <div class="seats blank"></div>
+            </div>
+
+            <div class="title">Show3</div>
+            <div id="show-3" class="show-grid">
+
+                <div class="seats" id="S3A1">A1</div>
+                <div class="seats" id="S3A2">A2</div>
+                <div class="seats" id="S3A3">A3</div>
+                <div class="seats" id="S3A4">A4</div>
+                <div class="seats" id="S3A5">A5</div>
+                <div class="seats" id="S3A6">A6</div>
+                <div class="seats" id="S3A7">A7</div>
+                <div class="seats blank"></div>
+                <div class="seats blank"></div>
+
+                <div class="seats" id="S3B1">B1</div>
+                <div class="seats" id="S3B2">B2</div>
+                <div class="seats" id="S3B3">B3</div>
+                <div class="seats" id="S3B4">B4</div>
+                <div class="seats" id="S3B5">B5</div>
+                <div class="seats" id="S3B6">B6</div>
+                <div class="seats" id="S3B7">B7</div>
+                <div class="seats" id="S3B8">B8</div>
+
+                <div class="seats blank"></div>
+
+                <div class="seats" id="S3C1">C1</div>
+                <div class="seats" id="S3C2">C2</div>
+                <div class="seats" id="S3C3">C3</div>
+                <div class="seats" id="S3C4">C4</div>
+                <div class="seats" id="S3C5">C5</div>
+                <div class="seats" id="S3C6">C6</div>
+                <div class="seats" id="S3C7">C7</div>
+                <div class="seats" id="S3C8">C8</div>
+                <div class="seats" id="S3C9">C9</div>
+
+            </div>
+
+        </div>
+        <div class="ticket-counter">
+            <button class="book-ticket-btn">Book Ticket</button>
+        </div>
+    </div>
+
+    <div>
+        <h4 class="billing-title">Billing</h5>
+            <div class="billing">
+                <span class="base-total">Base Total: </span> <span id="base-total-value"></span>
+                <span class="service-tax">Service Tax @14%: </span> <span id="service-tax-value"></span>
+                <span class="sbc">Swachh Bharat Cess @0.5%: </span> <span id="sbc-value"></span>
+                <span class="kkc">Krishi Kalyan Cess @0.5%: </span> <span id="kkc-value"></span>
+                <span class="total">Total: </span> <span id="total-value"></span>
+            </div>
+    </div>
+    <div>
+        <h4 class="sales-title">Sales</h5>
+            <div class="sales">
+                <span class="revenue">Revenue: </span> <span id="base-total-value-r"></span>
+                <span class="service-tax">Service Tax @14%: </span> <span id="service-tax-value-r"></span>
+                <span class="sbc">Swachh Bharat Cess @0.5%: </span> <span id="sbc-value-r"></span>
+                <span class="kkc">Krishi Kalyan Cess @0.5%: </span> <span id="kkc-value-r"></span>
+            </div>
+    </div>
+</body>
+
+</html>

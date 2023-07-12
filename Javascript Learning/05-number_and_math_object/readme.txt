@@ -1,0 +1,1 @@
+Use Math Object For Mathematical Function

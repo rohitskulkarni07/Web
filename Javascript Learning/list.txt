@@ -1,0 +1,33 @@
+01-intro
+02-variables
+03-datatypes
+04-type_converion
+05-number_and_math_object
+06-string_methods
+07-template_literals
+08-arrays & arrays methods
+09-object_literals
+__________________________
+10-dates & time
+11-if-statements & comparison
+12-switch-statement
+13-functions
+14-loop
+15-let and const
+16-window-object
+17-DOM intruduction
+18-DOM selectors multple and single
+19-traversing DOM
+20-creating elements
+21-removing elements
+22-event listeners
+23-mouse events
+24-keyboard event
+25-event buble
+26-local and session storage
+28-prototypes
+29-prototype inheritance
+30-es6 classes
+31-built in constructors
+32-sub-classes
+33-object.create

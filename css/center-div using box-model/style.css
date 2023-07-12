@@ -1,0 +1,22 @@
+body {
+    padding: 0%;
+    margin: 0%;
+}
+.container {
+    padding: 0%;
+    margin: 0%;
+    background-color: green;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.center {
+    padding: 0%;
+    margin: 0%;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

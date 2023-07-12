@@ -1,0 +1,73 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    margin: 5%;
+}
+
+.grid {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0);
+    min-width: 600px;
+    min-height: 600px;
+    box-shadow: 1px 1px 4px rgba(33, 32, 32, 1);
+    outline: 12px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.draw {
+    padding: 0;
+    margin: 0;
+    border-left: 0.1px solid rgba(0, 0, 0, 0.1);
+    border-top: 0.1px solid rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+    position: relative;
+    width: 300px;
+    height: 600px;
+
+}
+
+button {
+    border: none;
+    font-size: 38px;
+    font-weight: bolder;
+    color: white;
+    background-color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 1px 1px 4px rgba(33, 32, 32, 1);
+    letter-spacing: 8px;
+    padding: 2px;
+}
+
+button:hover {
+    background-color: rgb(70, 185, 223);
+}
+
+button:active {
+    background-color: rgb(33, 83, 99);
+}
+
+button:focus {
+    background-color: rgb(33, 83, 99);
+}
+
+.active {
+    background-color: rgb(33, 83, 99);
+}

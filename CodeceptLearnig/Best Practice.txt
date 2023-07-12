@@ -1,0 +1,11 @@
+Do not relay on UI test
+Use BDD except if stakeholder knows codding
+test design pattern should be used!
+never use sleep()
+name your test-cases wisely
+if possible use parralel test
+use soft assertion (go on if fail)
+Hard assertion (stop if fail)
+Do not use lots of comenting
+use wise comenting
+use wait 
