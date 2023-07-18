@@ -9,7 +9,7 @@ const ParentComponent = () => {
     number: "",
   });
 
-  const [submittedData, setSubmittedData] = useState({});
+  const [submittedData, setSubmittedData] = useState(null);
 
   const [error, setError] = useState({ name: "", email: "", number: "" });
 
@@ -45,10 +45,10 @@ const ParentComponent = () => {
       isValid = false;
     }
 
-    if (!formData.name.trim()) {
+    if (!formData.name.trim() || !/^[a-zA-Z ]*$/.test(formData.name.trim())) {
       setError((error) => ({
         ...error,
-        name: "Name cannot be blank",
+        name: "Name cannot be blank or number",
       }));
       isValid = false;
     }
@@ -94,7 +94,7 @@ const ParentComponent = () => {
         <label>
           Number{" "}
           <input
-            type="tel"
+            type="number"
             name="number"
             value={formData.number}
             onChange={handleInputChange}
