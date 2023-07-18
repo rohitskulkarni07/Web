@@ -38,7 +38,7 @@ const ParentComponent = () => {
     let isValid = true;
 
     if (formData.number.trim().length !== 10) {
-      setError(() => ({
+      setError((error) => ({
         ...error,
         number: "Mobile number must be 10 digits long.",
       }));
@@ -46,7 +46,7 @@ const ParentComponent = () => {
     }
 
     if (!formData.name.trim()) {
-      setError(() => ({
+      setError((error) => ({
         ...error,
         name: "Name cannot be blank",
       }));
@@ -54,7 +54,7 @@ const ParentComponent = () => {
     }
 
     if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(formData.email.trim())) {
-      setError(() => ({
+      setError((error) => ({
         ...error,
         email: "Email cannot be empty or invalid",
       }));
