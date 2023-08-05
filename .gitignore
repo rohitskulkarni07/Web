@@ -209,3 +209,6 @@ pages
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,node,react,macos
 Interview Questions.pages
+
+#Codecept
+*chromedriver
