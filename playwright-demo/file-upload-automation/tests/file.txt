@@ -1,0 +1,3 @@
+Hi I am file
+I am on new line
+i am $p(@!|
